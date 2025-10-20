@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Computer Science Tuition</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-roboto bg-brown-100">
+
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold text-blue-800">Online Computer Science Coaching</div>
+            <nav class="space-x-4">
+                <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#courses" class="text-red-700 hover:text-blue-600">Courses</a>
+                <a href="#feedback" class="text-gray-700 hover:text-blue-600">Feedback</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen bg-gradient-to-r from-blue-400 to-blue-900 flex items-center justify-center text-center text-white px-4">
+        <div>
+            <h1 class="text-5xl font-poppins font-bold mb-4">Learn Computer Science Online</h1>
+            <p class="text-xl mb-6">Personalized support and Interactive Learning</p>
+            <a href="#courses" class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-md text-white font-semibold transition-transform transform hover:scale-105">Enroll Now</a>
+        </div>
+    </section>
+
+    <!-- About / Features Section -->
+    <section class="max-w-7xl mx-auto py-16 px-4">
+        <h2 class="text-3xl font-poppins font-bold text-center mb-10">Why Choose Us?</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                <h3 class="font-bold text-xl mb-2">8+ years experienced Tutor</h3>
+                <p>Learn from  expert with 10 years of teaching experience in various Engineering Colleges like NIT,RIT and CUSAT.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                <h3 class="font-bold text-xl mb-2">Individual Teacher Student Interaction</h3>
+                
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                <h3 class="font-bold text-xl mb-2">Previous Year Question Paper Support</h3>
+                <p>Practice with solved question papers for better exam preparation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="bg-gray-200 py-16 px-4">
+        <h2 class="text-3xl font-poppins font-bold text-center mb-10">Our Modules</h2>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <!-- Module Card -->
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                <h3 class="font-bold text-xl mb-2">Bridge Courses</h3>
+                
+                                      <p class="mb-4">Learn Programming in:</p>
+<ul class="list-disc ml-6">
+    <li>Python</li>
+    <li>C</li>
+    <li>C++</li>
+    <li>Java</li>
+</ul>
+                <p class="mb-2">Price: ₹5,000</p>
+                
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-transform transform hover:scale-105">Enroll</button>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                <h3 class="font-bold text-xl mb-2">All Computer Science Subjects for all Universities</h3>
+                
+                <p class="mb-2">Price: ₹1000 per module</p>
+                <p class="mb-4">Price for Previous Year Question Paper Solving: ₹500 per Question Paper</p>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-transform transform hover:scale-105">Enroll</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="py-16 px-4 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-poppins font-bold text-center mb-10">Student Feedback</h2>
+
+        <!-- Feedback Form -->
+        <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow mb-10">
+            <form id="feedbackForm">
+                <input type="text" id="name" placeholder="Your Name" class="w-full mb-4 p-2 border rounded" required>
+                <input type="email" id="email" placeholder="Your Email" class="w-full mb-4 p-2 border rounded" required>
+                <textarea id="message" placeholder="Your Feedback" class="w-full mb-4 p-2 border rounded" rows="4" required></textarea>
+                <button type="submit" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded w-full">Submit Feedback</button>
+            </form>
+        </div>
+
+        <!-- Display Feedback -->
+        <div id="feedbackList" class="grid md:grid-cols-3 gap-6"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-200 py-16 px-4 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-poppins font-bold text-center mb-10">Contact Us</h2>
+        <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow">
+            <form id="contactForm">
+                <input type="text" id="contactName" placeholder="Your Name" class="w-full mb-4 p-2 border rounded" required>
+                <input type="email" id="contactEmail" placeholder="Your Email" class="w-full mb-4 p-2 border rounded" required>
+                <textarea id="contactMessage" placeholder="Your Message" class="w-full mb-4 p-2 border rounded" rows="4" required></textarea>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded w-full">Send Message</button>
+            </form>
+            <div class="mt-6">
+                <p>Email: tuition@cs.com</p>
+                <p>Phone: +91 9539485289</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-md mt-10">
+        <div class="max-w-7xl mx-auto text-center py-4 text-gray-700">
+            © 2025 Online CS Tuition | 
+            <a href="#home" class="hover:text-blue-600">Home</a> | 
+            <a href="#courses" class="hover:text-blue-600">Courses</a> | 
+            <a href="#feedback" class="hover:text-blue-600">Feedback</a> | 
+            <a href="#contact" class="hover:text-blue-600">Contact</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
